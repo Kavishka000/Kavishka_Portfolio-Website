@@ -63,7 +63,7 @@ window.addEventListener('scroll', scrollHeader)
 const swiperWork = new Swiper('.work__swiper', {
   loop: true,
   spaceBetween: 24,
-  slidersPerView: 'auto',
+  slidesPerView: 'auto',
   grabCursor: true,
   speed: 600,
 
@@ -71,10 +71,10 @@ const swiperWork = new Swiper('.work__swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  //autoplay: {
-  // delay: 3000,
-  // disableOnInteraction: false,
-  //}
+  autoplay: {
+   delay: 3000,
+   disableOnInteraction: false,
+  }
 })
 
 /*=============== SERVICES ACCORDION ===============*/ 
