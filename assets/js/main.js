@@ -89,9 +89,13 @@ servicesButtons.forEach(button => {
 
       // Close all other services data
       servicesCards.forEach(card => {
-      card.classList.replace('services-open', 'services-close')
-})
-        
+         card.classList.replace('services-open', 'services-close')
+      })
+
+      // If the clicked card was closed, it opens it
+      if(!isOpen){
+         currentCard.classList.replace('services-close','services-open')
+      }
     })
 })
 

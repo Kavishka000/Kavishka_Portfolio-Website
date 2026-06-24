@@ -668,7 +668,7 @@ img {
 
 /* Hide services info */
 .services-open .services__data{
-  max-height: 500px;
+  max-height: 500px; /* if you have more elements, increase the max-height */
   opacity: 1;
 }
 
@@ -710,7 +710,8 @@ img {
   }
 
   .home__container,
-  .about__container{
+  .about__container,
+  .services__container{
     grid-template-columns: 400px;
     justify-content: center;
   }
@@ -825,6 +826,27 @@ img {
   }
   .work .blob-big{
     right: -6rem;
+  }
+
+  .services__container{
+    grid-template-columns: 690px;
+    row-gap: 3rem;
+  }
+  .services__card{
+    padding-bottom: 2rem;
+  }
+  .services__button{
+    column-gap: 3rem;
+  }
+  .services__icon{
+    font-size: 2.5rem;
+  }
+  .services__name{
+    font-size: var(--h1-font-size);
+  }
+  .services__description,
+  .services__list{
+    padding-left: 5.5rem;
   }
 }
 
