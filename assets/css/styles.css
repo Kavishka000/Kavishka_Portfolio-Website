@@ -757,12 +757,208 @@ img {
 
 /*=============== TESTIMONIALS SECTION ===============*/
 
+.testimonials__container{
+  position: relative;
+  margin-inline: 0;
+  overflow: hidden;
+}
+
+.testimonials__card{
+  position: relative;
+  width: 280px;
+  background-color: var(--container-color);
+  padding: 1.5rem 1rem;
+  border-radius: 1.5rem;
+  margin-inline: 0.5rem;
+  overflow: hidden;
+}
+
+.testimonials__rating{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-bottom: 1rem;
+  z-index: 5;
+}
+
+.testimonials__number{
+  font: var(--font-semi-bold) var(--h1-font-size) var(--second-font);
+  color: var(--first-color);
+}
+
+.testimonials__stars{
+  display: flex;
+  column-gap: 0.25rem;
+}
+
+.testimonials__stars i{
+  font-size: 1rem;
+  color: var(--white-color);
+}
+
+.testimonials__description{
+  margin-bottom: 3rem;
+  z-index: 5;
+}
+
+.testimonials__profile{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  z-index: 5;
+}
+
+.testimonials__img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.testimonials__name{
+  font: var(--font-semi-bold) var(--h3-font-size) var(--second-font);
+  color: var(--white-color);
+}
+
+.testimonials__card .blob-big{
+  z-index: 1;
+  right: -6rem;
+  bottom: -3rem;
+}
+
+.testimonials__content{
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite; 
+}
+
+.testimonials__content:hover{
+  animation-play-state: paused;
+}
 
 /* Infinite scroll animation */
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
 
 
 /*=============== CONTACT SECTION ===============*/
+.contact__container{
+  row-gap: 4rem;
+}
 
+.contact__form{
+  position: relative;
+  row-gap: 1rem;
+}
+
+.contact__group{
+  position: relative;
+}
+
+.contact__input{
+  width: 100%;
+  background: var(--container-color);
+  color: var(--white-color);
+  padding: 1.25rem;
+  border-radius: 4rem;
+  font-weight: var(--font-semi-bold);
+  font-family: var(--second-font);
+}
+
+.contact__label{
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  pointer-events: none;
+  font-weight: var(--font-semi-bold);
+  font-family: var(--second-font);
+  transition: opacity 0.4s;
+}
+
+.contact__input:focus ~ .contact__label,
+.contact__input:valid ~ .contact__label{
+  opacity: 0;
+}
+
+.contact__input:autofill{
+  transition: background-color 6000s, color 6000s;
+}
+
+.contact__area{
+  height: 10rem;
+  border-radius: 1.5rem;
+  resize: none;
+}
+
+.contact__button{
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.contact__message{
+  position: absolute;
+  bottom: -2rem;
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+}
+
+.contact__content{
+  row-gap: 1rem;
+}
+
+.contact__link{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__info{
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.contact__icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.contact__title{
+  font-size: var(--normal-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.contact__address{
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--second-font);
+  font-style: inherit;
+}
+
+.contact__arrow{
+  width: 32px;
+  height: 32px;
+  background-color: var(--body-color);
+  border-radius: 50%;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.contact__link:hover .contact__arrow{
+  background-color: var(--first-color);
+  color: var(--black-color);
+}
 
 /*=============== FOOTER ===============*/
 
@@ -957,6 +1153,43 @@ img {
     top: -7.5rem;
   }
 
+  .testimonials__card{
+    width: 420px;
+    padding: 3rem;
+    border-radius: 3rem;
+  }
+  .testimonials__number{
+    font-size: var(--h2-font-size);
+  }
+  .testimonials__rating{
+    margin-bottom: 2rem;
+  }
+  .testimonials__description{
+    font-size: var(--h3-font-size);
+    margin-bottom: 9.5rem;
+  }
+  .testimonials__card .blob-big{
+    bottom: -6rem;
+  }
+  .testimonials__container::after,
+  .testimonials__container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+  }
+  .testimonials__container::after{
+    left: 0;
+    background: linear-gradient(90deg, var(--body-color) 0%,
+                                       hsla(0, 0%, 0%, 0) 100%);
+  }
+  .testimonials__container::before{
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 0) 0%,
+                                       var(--body-color)100%);
+  }
 }
 
 /* For 2K resolutions <> */

@@ -101,11 +101,46 @@ servicesButtons.forEach(button => {
 
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/ 
+//Get all testimonial sliders
+const tracks = document.querySelectorAll('.testimonials__content')
 
+tracks.forEach(track => {
+   // Get the child testimonial sliders and create a copy of all cards
+   const cards = [...track.children] // (... spread operato), converts the collection into an array
+
+   // Get all the testimonial sliders
+   for (const card of cards) {
+      // Duplicate the card and append it at the end
+      track.appendChild(card.cloneNode(true)) 
+   }
+})
 
 /*=============== CONTACT EMAIL JS ===============*/ 
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
 
+const sendEmail = async (e) => {
+   // prevent the page from reloading
+   e.preventDefault()
 
+   try{
+      // serviceID - template ID - #form - publicKey
+      await emailjs.sendForm('service_zptmkv8','template_kdnsqfy','#contact-form','vqmqK9AbAu--2pwsE')
+
+      //show sent message
+      contactMessage.textContent = 'Message sent successfully ✅'
+
+      //clear input fields
+      contactForm.reset()
+   } catch (error){
+      //show error message
+      contactMessage.textContent = 'Message not sent (service error) ❌'
+   } finally {
+      //remove message after five seconds
+      setTimeout(() => contactMessage.textContent = '', 5000)
+   }
+}
+contactForm.addEventListener('submit', sendEmail)      
 /*=============== SHOW SCROLL UP ===============*/ 
 
 
