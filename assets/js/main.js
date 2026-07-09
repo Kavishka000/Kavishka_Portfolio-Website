@@ -125,7 +125,7 @@ const sendEmail = async (e) => {
 
    try{
       // serviceID - template ID - #form - publicKey
-      await emailjs.sendForm('service_zptmkv8','template_kdnsqfy','#contact-form','vqmqK9AbAu--2pwsE')
+      await emailjs.sendForm('','','#contact-form','')
 
       //show sent message
       contactMessage.textContent = 'Message sent successfully ✅'
