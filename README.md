@@ -6,7 +6,7 @@ A modern, fully responsive personal portfolio website built using **HTML5, CSS3,
 
 ## 🚀 Live Demo
 
-🔗 https://your-portfolio-link.com
+🔗 https://kavishka000.github.io/Kavishka_Portfolio-Website/
 
 > Replace the above link with your GitHub Pages or Netlify deployment.
 
@@ -14,9 +14,8 @@ A modern, fully responsive personal portfolio website built using **HTML5, CSS3,
 
 ## 📸 Preview
 
-![Portfolio Preview](assets/img/preview.png)
+![Portfolio Preview](assets/img/preview.jpg)
 
-> Add a screenshot of your homepage and save it as `preview.png` inside the `assets/img` folder.
 
 ---
 
@@ -55,7 +54,7 @@ A modern, fully responsive personal portfolio website built using **HTML5, CSS3,
 ## 📂 Project Structure
 
 ```
-Portfolio/
+Kavishka_Portfolio-Website/
 │
 ├── index.html
 ├── assets/
@@ -64,7 +63,7 @@ Portfolio/
 │   ├── js/
 │   │   └── main.js
 │   ├── img/
-│   └── icons/
+│   
 │
 └── README.md
 ```
@@ -76,13 +75,13 @@ Portfolio/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Kavishka000/Kavishka_Portfolio-Website.git
 ```
 
 Go to the project folder
 
 ```bash
-cd portfolio
+cd Kavishka_Portfolio-Website
 ```
 
 Open `index.html` in your browser.
@@ -91,16 +90,16 @@ Open `index.html` in your browser.
 
 ## 📧 Contact
 
-**Kavishka**
+**Kavindu Kavishka Wijemanna**
 
 Email:
 kavindukavishka56@gmail.com
 
 GitHub:
-https://github.com/yourusername
+https://github.com/Kavishka000
 
-LinkedIn:
-https://linkedin.com/in/yourusername
+Phone No:
++9470 309 1673
 
 ---
 
