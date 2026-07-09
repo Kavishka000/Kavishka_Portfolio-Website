@@ -6,7 +6,7 @@ A modern, fully responsive personal portfolio website built using **HTML5, CSS3,
 
 ## 🚀 Live Demo
 
-🔗 https://kavishka000.github.io/Kavishka_Portfolio-Website/
+🔗 https://kavishka000.github.io/Portfolio-Website/
 
 > Replace the above link with your GitHub Pages or Netlify deployment.
 
@@ -54,7 +54,7 @@ A modern, fully responsive personal portfolio website built using **HTML5, CSS3,
 ## 📂 Project Structure
 
 ```
-Kavishka_Portfolio-Website/
+Portfolio-Website-main/
 │
 ├── index.html
 ├── assets/
@@ -75,13 +75,13 @@ Kavishka_Portfolio-Website/
 Clone the repository
 
 ```bash
-git clone https://github.com/Kavishka000/Kavishka_Portfolio-Website.git
+git clone https://github.com/Kavishka000/Portfolio-Website.git
 ```
 
 Go to the project folder
 
 ```bash
-cd Kavishka_Portfolio-Website
+cd Portfolio-Website-main
 ```
 
 Open `index.html` in your browser.
