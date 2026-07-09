@@ -67,6 +67,31 @@ Portfolio-Website-main/
 │
 └── README.md
 ```
+---
+
+## 📧 EmailJS Setup
+
+This project uses EmailJS for the contact form.
+
+To enable the contact form:
+
+1. Create an account at https://www.emailjs.com/
+2. Create an Email Service.
+3. Create an Email Template.
+4. Get your Public Key.
+5. Replace the placeholders inside `main.js`.
+
+```javascript
+emailjs.sendForm(
+    'YOUR_SERVICE_ID',
+    'YOUR_TEMPLATE_ID',
+    '#contact-form',
+    'YOUR_PUBLIC_KEY'
+);
+```
+
+After replacing these values, the contact form will work correctly.
+```
 
 ---
 
